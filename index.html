@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+   <!--css файлы для слайдера-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+   <link rel="stylesheet" href="style/main.css">
+   <link rel="stylesheet" href="style/stylecssforslider.css">
+   <title>Mobhil</title>
+</head>
+
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-light shadow">
+         <div class="container">
+            <img class="logo-mobhil " src="/img/Mobhil-logo.png" alt="" width="30" height="24">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span> <!-- при бургере появляется иконка справа-->
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+               <ul class="navbar-nav mx-auto order-0">
+
+                  <li class="nav-item" style="border-bottom: 3px solid blue;">
+                     <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+                  </li>
+
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">About</a>
+                  </li>
+
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Services</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Car collection
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                           <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                     </ul>
+                  </li>
+
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Location</a>
+                  </li>
+
+                  <li class="nav-item">
+                     <a class="nav-link disabled">Contact</a>
+                  </li>
+
+               </ul>
+
+               <form class="d-flex">
+                  <button class="phone btn btn-outline-success" type="submit"> <a
+                        class="text-decoration-none text-reset" href="tel:+380687709898">+380687709898</a></button>
+
+                  <li class="nav-item dropdown dropdown-language">
+                     <a class="border border-secondary nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 5px;">
+                        EN
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">RUS</a></li>
+                        <li><a class="dropdown-item" href="#">UKR</a></li>
+                     </ul>
+                  </li>
+
+               </form>
+
+            </div>
+
+         </div>
+      </nav>
+   </header>
+
+   <section>
+
+      <div class="row">
+         <div class="col-6">
+            <div class="leftcol-section-1">
+               <div class="switch-button">
+                  <label class="switch">
+                     <input type="checkbox" checked>
+                     <span class="slider-switch round">
+                        <span class="switch-non">Trending</span>
+                        <span class="switch-oui">2020 Ford Mustang</span>
+                     </span>
+                  </label>
+               </div>
+               <h1 class="say-hello"> Say hello to best car diller platform. </h1>
+               <dd> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, veritatis excepturi repellendus
+                  harum
+                  ipsam aperiam odit necessitatibus. Omnis, voluptatum minima.</dd>
+               <div class="under-dt shadow">
+                  <a class="border-end dropdown-toggle mini-selector" href="#" id="navbarDropdown" role="button"
+                     data-bs-toggle="dropdown" aria-expanded="false"
+                     style="font-weight: bold; text-transform: uppercase; text-decoration:none; color: black; list-style-type: none;margin-left: 20px;border-radius:5px;">
+                     Porsche
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <li><a class="dropdown-item" href="#">991</a></li>
+                     <li><a class="dropdown-item" href="#">992</a></li>
+                  </ul>
+
+
+                  <a class=" text-secondary border-end dropdown-toggle mini-selector" href="#" id="navbarDropdown"
+                     role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                     style="font-weight: bold; text-transform: uppercase; text-decoration:none; color: black; list-style-type: none;margin-left: 20px;border-radius:5px;">
+                     Class
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <li><a class="dropdown-item" href="#">S Class</a></li>
+                     <li><a class="dropdown-item" href="#">E Class</a></li>
+                     <li><a class="dropdown-item" href="#">X Class</a></li>
+                     <li><a class="dropdown-item" href="#">Y Class</a></li>
+                  </ul>
+
+                  <a class="text-secondary dropdown-toggle mini-selector" href="#" id="navbarDropdown" role="button"
+                     data-bs-toggle="dropdown" aria-expanded="false"
+                     style="font-weight: bold; text-transform: uppercase; text-decoration:none; color: black; list-style-type: none;margin-left: 20px;border-radius:5px;">
+                     Model
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <li><a class="dropdown-item" href="#">S Class</a></li>
+                     <li><a class="dropdown-item" href="#">E Class</a></li>
+                     <li><a class="dropdown-item" href="#">X Class</a></li>
+                     <li><a class="dropdown-item" href="#">Y Class</a></li>
+                  </ul>
+
+                  <button type="button" class="btn btn-primary btn-lg blue-button-near-mini-selector">
+                     <pre>Find     → </pre>
+                  </button>
+               </div>
+               <div class="advanced-serch" style="padding-top: 40px; ">
+                  <div class="">
+                     <a class="text-primary" style="font-weight: bold; text-decoration:none; font-size: 20px;" href="">
+                        <pre>Try advanced search   &#10141;</pre>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="auto-brands">
+                  <h5 class="text-secondary">Popular Brands</h5>
+
+                  <ul class="vertical-list" style="margin: 20px 0px 0px 0px; ">
+                     <li>Honda</li>
+                     <li>Ford</li>
+                     <li>Toyota</li>
+                     <li>Porsche</li>
+                     <li class="text-secondary">24+ more</li>
+                  </ul>
+
+               </div>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="rightcol-section-1">
+               <div class="press-holder">
+                  <img class="image-with-radius-1" src="img/RedPorsche.png">
+                  <div class="text-on-picture">
+                     <div class="onpicture">
+                        <div class="top-left">
+                           <h2>Sport Car</h2> <br>
+                           <h3> Porsche 123 GT</h3>
+                        </div>
+                        <div class="top-right">
+                           <h4> Starting at </h4><br>
+                           <h3>25 000$</h3>
+                        </div>
+
+                        <div class="bottom-left">
+                           <h3>Discover more</h3>
+                        </div>
+
+                        <div class="bottom-right" style="display: flex;">
+                           <a href=""> <img src="img/arrow for slider.png" alt="" style="margin-right: 30px;"></a>
+                           <a href=""> <img src="img/arrow right for slider.png" alt="" style="margin-left: 30px;"></a>
+                        </div>
+                     </div>
+
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <section>
+      <div class="row">
+
+         <div class="col-5">
+            <div class="leftcol-section-2">
+               <img class="image-with-radius-2" src="img/black-Dodge.png">
+            </div>
+         </div>
+
+         <div class="col-7">
+            <div class="up-text">
+               <h6 style="text-transform: uppercase; color: blue; letter-spacing: 5px;">About</h6>
+               <h1>
+                  About the Mobhil
+               </h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima esse quibusdam commodi consectetur
+                  aliquam quo autem, eveniet omnis id repellat, nulla inventore minus dicta temporibus tempora quae
+                  suscipit incidunt!</p>
+            </div>
+            <div class="d-flex">
+               <div class="container-card" style="width: 18rem; border-radius: 500px;">
+                  <div class="card-body shadow">
+                     <img class="elements-of-card" src="img/elementStar.jpeg" alt="Star">
+                     <h4 class="card-title" style="font-weight: bold;text-transform: uppercase; ">Exclusive</h4>
+
+                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+
+                  </div>
+               </div>
+
+
+
+               <div class="container-card" style="width: 18rem;">
+                  <div class="card-body shadow">
+                     <img class="elements-of-card" src="img/elementshit.png" alt="Star">
+                     <h4 class="card-title" style="font-weight: bold;text-transform: uppercase; ">Update</h4>
+
+                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+
+                  </div>
+               </div>
+
+
+               <div class="col-2">
+                  <div class="container-card" style="width: 18rem;">
+                     <div class="card-body shadow">
+                        <img class="elements-of-card" src="img/elementFigure.png" alt="Star">
+                        <h4 class="card-title" style="font-weight: bold;text-transform: uppercase; ">Secure</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                           of
+                           the
+                           card's
+                           content.</p>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <section>
+
+      <div class="container">
+         <div class="row">
+            <div class="col-6 leftcol-section3">
+               <div class="textabout">
+                  <h6>We Bring You to The Future</h6>
+                  <h2 class="dont-wories"> Don't wories, <br> we check all of unit </h2>
+                  <dd class="dd-section3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus placeat
+                     neque aliquid doloribus sint accusantium maiores commodi. Quo officia soluta fugit ut voluptas eius
+                     vero ipsa dicta tempora, maiores quaerat perferendis dolorum debitis eum temporibus rem minus
+                     necessitatibus veniam rerum!</dd>
+                  <button type="button" class="btn btn-primary btn-lg blue-button-near-mini-selector">
+                     <p>Discover More</p>
+                  </button>
+               </div>
+
+            </div>
+            <div class="col-6">
+               <img src="img/ThirdRedPorsche.jpeg" style="width: 100%; border-radius: 30px;" alt="">
+               <img src="img/Rectangle.png" class="Rectangle1" alt="">
+               <img src="img/Rectangle.png" class="Rectangle2" alt="">
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+   <section>
+      <div class="container">
+
+         <div class="header-section-3">
+            <h2 style="font-weight: bold; padding-bottom: 20px; font-size: 50px;">Top deals of the weak</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nesciunt commodi quod voluptas facere
+               sint inventore libero consequatur suscipit eius.</p>
+         </div>
+
+         <div class="slider">
+            <div class="page" data-modal-state="closed">
+               <div class="container-fluid">
+                  <div class="card-slider">
+                     <div class="card-wrapper">
+                        <article class="card">
+                           <picture class="card__background">
+                              <img src="img/Cars for slider/1.png">
+                           </picture>
+                           <div class="card__category">
+                              consulta
+                           </div>
+                           <h3 class="card__title">Asesoría Angelical</h3>
+                           <div class="card__duration">
+                              Duración: 3 horas
+                           </div>
+                        </article>
+                     </div>
+                     <div class="card-wrapper">
+                        <article class="card">
+                           <picture class="card__background">
+                              <img src="img/Cars for slider/2.png">
+                           </picture>
+                           <div class="card__category">
+                              consulta
+                           </div>
+                           <h3 class="card__title">Asesoría Angelical</h3>
+                           <div class="card__duration">
+                              Duración: 3 horas
+                           </div>
+                        </article>
+                     </div>
+                     <div class="card-wrapper">
+                        <article class="card">
+                           <picture class="card__background">
+                              <img src="img/Cars for slider/3.png">
+                           </picture>
+                           <div class="card__category">
+                              consulta
+                           </div>
+                           <h3 class="card__title">Asesoría Angelical</h3>
+                           <div class="card__duration">
+                              Duración: 3 horas
+                           </div>
+                        </article>
+                     </div>
+                     <div class="card-wrapper">
+                        <article class="card">
+                           <picture class="card__background">
+                              <img src="img/Cars for slider/4.png">
+                           </picture>
+                           <div class="card__category">
+                              consulta
+                           </div>
+                           <h3 class="card__title">Asesoría Angelical</h3>
+                           <div class="card__duration">
+                              Duración: 3 horas
+                           </div>
+                        </article>
+                     </div>
+                     <div class="card-wrapper">
+                        <article class="card">
+                           <picture class="card__background">
+                              <img src="img/Cars for slider/5.png">
+                           </picture>
+                           <div class="card__category">
+                              consulta
+                           </div>
+                           <h3 class="card__title">Asesoría Angelical</h3>
+                           <div class="card__duration">
+                              Duración: 3 horas
+                           </div>
+                        </article>
+                     </div>
+                  </div>
+               </div>
+               <div class="overlay"></div>
+               <div class="modal-wrapper">
+                  <div class="modal">
+                     <button class="modal__close-button" type="button">
+                        <svg class="icon icon-cross">
+                           <use xlink:href="#icon-cross"></use>
+                        </svg>
+                     </button>
+                     <div class="modal__scroll-area">
+                        <header class="modal__header">
+                           <div class="card__background">
+                              <img src="img/Mobhil-logo.png">
+                           </div>
+                           <div class="card__category">
+                              consulta
+                           </div>
+                           <h1 class="card__title">Asesoría Angelical</h1>
+                           <div class="card__duration">
+                              Duración: 3 horas
+                           </div>
+                        </header>
+                        <main class="modal__content">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo sint debitis?
+                              Dolorem
+                              est at
+                              voluptatum obcaecati tempore eaque perferendis. Totam at consectetur commodi porro atque
+                              eligendi
+                              rerum
+                              vero
+                              nam?</p>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo sint debitis?
+                              Dolorem
+                              est at
+                              voluptatum obcaecati tempore eaque perferendis. Totam at consectetur commodi porro atque
+                              eligendi
+                              rerum
+                              vero
+                              nam?</p>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo sint debitis?
+                              Dolorem
+                              est at
+                              voluptatum obcaecati tempore eaque perferendis. Totam at consectetur commodi porro atque
+                              eligendi
+                              rerum
+                              vero
+                              nam?</p>
+                        </main>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+
+
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.3.1/smooth-scrollbar.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+            <script src="style/script.js"></script>
+         </div>
+      </div>
+   </section>
+
+   <section>
+      <div class="container">
+         <div class="row">
+            <div class="col-6">
+               <img src="img/ThirdRedPorsche.jpeg" style="width: 100%; border-radius: 30px;" alt="">
+               <img src="img/Rectangle.png" class="Rectangle1" alt="">
+               <img src="img/Rectangle.png" class="Rectangle2" alt="">
+            </div>
+            <div class="col-6">
+               <div class="textabout">
+                  <h6>Best car in the world</h6>
+                  <h2 class="dont-wories"> We serve you with best car in the world</h2>
+                  <dd class="dd-section3">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus placeat
+                     neque aliquid doloribus sint accusantium maiores commodi. Quo officia soluta fugit ut voluptas eius
+                     vero ipsa dicta tempora, maiores quaerat perferendis dolorum debitis eum temporibus rem minus
+                     necessitatibus veniam rerum!
+                  </dd>
+                  <div class="nmt-play-wrapper">
+                     <button class="nmt-arrow-right"></button>
+                     <div class="nmt-circle">
+                     </div>
+                     <a href="" style="color: gray; padding-left: 20px;"> Learn More</a>
+                  </div>
+
+               </div>
+
+            </div>
+         </div>
+      </div>
+      </div>
+   </section>
+
+   <section class="section-4" style="position: relative;">
+      <div class="container">
+         <div class="background" style="background-color: blue; width: 100%;">
+
+            <div class="leftcol-4-section-4">
+               <p style="width: 50%;">Have any quastions about us?</p>
+
+               <button type="button" class="btn btn-outline-light btn-lg">+380 68 77 098 98</button>
+               <button type="button" class="btn btn-outline-light btn-lg">Contact Us</button>
+
+            </div>
+
+         </div>
+
+         <div class="rightcol">
+            <img src="img/Footer.jpeg" alt="">
+         </div>
+      </div>
+
+   </section>
+
+   <hr style="margin-top:100px;" width="" size="3" color="grey">
+
+   <footer>
+      <div class="container" style="display: flex;">
+         <div class="row">
+
+            <div class="col-6">
+               <img src="img/Mobhil-logo-footer.png" alt="logo" style="height: 80px;">
+               <h6>Best car dealer in Europe</h6>
+               <div class="footer-col-6">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum hic neque illo! Laboriosam, labore
+                     voluptates!</p>
+               </div>
+
+            </div>
+
+            <div class="col-2">
+               <h6>Qiuck links</h6>
+               <ul>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">Contact Us</a></li>
+                  <li> <a href="">Products</a></li>
+                  <li> <a href="">Login</a> </li>
+                  <li><a href="">Sign Up</a></li>
+               </ul>
+            </div>
+
+            <div class="col-2">
+               <h6>Support</h6>
+               <ul>
+                  <li> <a href=""> Affiliates</a></li>
+                  <li> <a href=""> itemap</a></li>
+                  <li> <a href=""> Cancelation Policy </a></li>
+                  <li> <a href="">Privacy Policy </a></li>
+                  <li> <a href="">Legal Disclaimer</a></li>
+               </ul>
+            </div>
+
+            <div class="col-2">
+               <h6>Contact</h6>
+               <div class="buttons-under-contact">
+                  <a href="">
+                     <div class="undercontact-footer">
+                        <div class="street">
+                           77 Highfield Road London <br> N36 7SB
+                        </div>
+                     </div>
+                  </a>
+                  <a href="">
+                     <div class="undercontact-footer">
+                        <div class="phonenumber-footer">
+                           +(098)9810010
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>

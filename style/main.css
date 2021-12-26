@@ -1,0 +1,439 @@
+
+.logo-mobhil {
+   height: 100px;
+   width: 210px;
+}
+
+.dropdown-language {
+   text-decoration: none;
+   list-style-type: none;
+   margin-left: 20px;
+}
+
+.dropdown-language a {
+   color: black;
+}
+
+.onpicture {
+   color: white;
+}
+
+.PorscheGT-right {
+   position: absolute;
+   top: 50px;
+   left: 600px;
+}
+
+.PorscheGT-left {
+   position: absolute;
+   top: 50px;
+   left: 80px;
+   bottom: 300px;
+}
+
+.top-left {
+   position: absolute;
+   top: 8px;
+   left: 16px;
+   padding: 50px;
+}
+
+.top-right {
+   position: absolute;
+   top: 8px;
+   right: 16px;
+   padding: 50px;
+}
+
+.bottom-left {
+   position: absolute;
+   bottom: 8px;
+   left: 16px;
+   padding: 50px;
+}
+
+.bottom-right {
+   position: absolute;
+   bottom: 0;
+   right: 50px;
+   padding: 0px 200px 50px 0px ;
+   
+   width: 150px;
+}
+
+form {
+   margin-left: 10px;
+}
+
+.rightcol-section-1 {
+   background-color: black;
+   border-radius: 0px 0px 0px 100px;
+   text-align: right;
+}
+
+.leftcol-section-1 {
+   padding: 50px 15px 0px 100px;
+   /* position: absolute; */
+}
+
+.leftcol-section-2 {
+   background-color: black;
+   border-radius: 0px 80px 80px 0px;
+   width: 100%;
+}
+
+.image-with-radius-1 {
+   border-radius: 0px 0px 15px 100px;
+   opacity: 0.7;
+   width: 100%;
+}
+
+.image-with-radius-2 {
+   width: 100%;
+   border-radius: 0px 80px 80px 0px;
+   opacity: 0.7;
+}
+
+.press-holder {
+   position: relative;
+}
+
+.say-hello {
+   font-size: 70px;
+   font-weight: 800;
+   line-height: 50px color #222;
+   margin-bottom: 20px;
+}
+
+dd {
+   font-weight: normal;
+   font-size: 15px;
+   color: #636363;
+   margin-bottom: 50px;
+}
+
+.leftcol {
+   padding: 100px 80px 115px 110px;
+}
+
+/* switch button */
+
+.switch {
+   position: relative;
+   display: inline-block;
+   width: 320px;
+   height: 50px;
+}
+
+.switch input {
+   display: none;
+}
+
+.slider-switch {
+   position: absolute;
+   cursor: pointer;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #e8e8e8;
+   -webkit-transition: 0.4s;
+   transition: 0.4s;
+   user-select: none;
+}
+
+.slider-switch:before {
+   position: absolute;
+   content: "";
+   height: 40px;
+   width: 122px;
+   left: 7px;
+   bottom: 5px;
+   background-color: orange;
+   color: white;
+   -webkit-transition: 0.4s;
+   transition: 0.4s;
+}
+
+input:checked + .slider-switch {
+   background-color: #e8e8e8;
+}
+
+input:focus + .slider-switch {
+   box-shadow: 0 0 1px #5283ff;
+}
+
+input:checked + .slider-switch:before {
+   transform: translateX(132px);
+   width: 172px;
+   background-color: #5283ff;
+}
+
+/* Rounded slids */
+.slider-switch.round {
+   border-radius: 34px;
+}
+
+.slider-switch.round:before {
+   border-radius: 34px;
+}
+.slider-switch.square:before {
+   border-radius: 4px;
+}
+
+.switch-non {
+   position: absolute;
+   top: 50%;
+   transform: translate(60%, -50%);
+   color: white;
+}
+
+.switch-oui {
+   position: absolute;
+   top: 50%;
+   transform: translate(-10%, -50%);
+   right: 15px;
+   color: #6666;
+}
+
+input:checked + .slider-switch > .switch-oui {
+   color: #fff;
+}
+
+.mini-selector {
+   padding: 20px 40px 20px 0px;
+}
+
+.second-selector {
+   color: yellow;
+}
+
+.blue-button-near-mini-selector {
+   margin-left: 0px;
+   padding: 11px 10px 0px 30px;
+}
+
+.container-card {
+   padding: 10px;
+}
+
+.vertical-list li {
+   display: inline; /* Отображать как строчный элемент */
+   padding-right: 20px;
+   font-weight: bold;
+   text-transform: uppercase;
+   font-size: 24px;
+}
+
+section {
+   padding-bottom: 100px;
+}
+
+.under-dt {
+   padding: 15px 0px 15px 0px;
+   width: 650px;
+   /* position: absolute; */
+}
+
+.elements-of-card {
+   padding: 20px 0px 20px 0px;
+   height: 100px;
+}
+
+.card-title {
+   padding: 20px 0px 20px 0px;
+}
+
+.card-body {
+   padding: 40px;
+}
+
+.up-text {
+   padding: 60px;
+   width: 80%;
+}
+
+.up-text h1 {
+   padding: 25px 0px 25px 0px;
+   font-weight: bold;
+}
+
+.dont-wories {
+   font-weight: bold;
+   font-size: 50px;
+   padding: 20px 0px 20px 0px;
+}
+
+.blue-button-near-mini-selector {
+   padding: 10px 30px 0px 30px;
+}
+
+.textabout h6 {
+   font-size: 20px;
+   color: grey;
+}
+
+.leftcol-section3 {
+   padding: 40px;
+}
+
+/* овалы под картинкой. конечно, можно создать переменные и все это дело автоматизировать, но мне так лень */
+
+.Rectangle1 {
+   display: block;
+   width: 550px;
+   height: 20px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.Rectangle2 {
+   display: block;
+   width: 450px;
+   height: 20px;
+   margin-left: auto;
+   margin-right: auto;
+   opacity: 0.3;
+}
+
+.header-section-3 {
+   padding: 0px;
+   max-width: 700px;
+   margin: auto;
+   text-align: center;
+}
+
+.header-section-3 p {
+   font-size: 15px;
+}
+
+.textabout {
+   padding: 0px 20px 0px 40px;
+}
+
+/* play button */
+
+.nmt-circle {
+   border: 1px solid #0000bd;
+   border-radius: 100%;
+   height: 30px;
+   margin: -5px 5px 0 0;
+   padding: 25px;
+   width: 20px;
+}
+
+/* play button placement */
+.nmt-arrow-right {
+   background-color: transparent;
+   border: 0;
+   bottom: 2px;
+   left: 35px;
+   padding: 0;
+   position: relative;
+}
+
+.nmt-play-wrapper {
+   align-items: center;
+   display: flex;
+   margin-top: 20px;
+}
+
+/* play button */
+.nmt-play-wrapper button {
+   border-top: 8px solid transparent;
+   border-bottom: 8px solid transparent;
+   border-left: 15px solid #0000bd;
+   border-right: 0;
+}
+
+.nmt-play-wrapper button:hover,
+.nmt-play-wrapper button:hover ~ .nmt-circle {
+   background-color: #0000bd;
+   border: 1px solid #0000bd;
+   cursor: pointer;
+}
+
+.nmt-play-wrapper button:hover {
+   border-top: 8px solid transparent;
+   border-bottom: 8px solid transparent;
+   border-left: 15px solid white;
+   border-right: 0;
+}
+
+.section-4 img {
+   height: 650px;
+   position: absolute;
+   bottom: 0;
+   left: 60%;
+   object-fit: none;
+   border-radius: 20px;
+}
+.section-4 p {
+   color: white;
+   font-size: 60px;
+   margin: 60px;
+}
+
+.section-4 button {
+   margin: 0px 0px 60px 30px;
+   padding: 10px 30px 10px 30px;
+}
+
+.background {
+   border-radius: 100px;
+   padding: 30px;
+}
+
+footer li {
+   list-style-type: none;
+}
+
+footer ul {
+   padding: 0;
+}
+
+footer a {
+   text-decoration: none;
+   left: 0;
+   right: 0;
+   color: grey;
+}
+
+footer {
+   padding: 30px 10px 10px 10px;
+   text-decoration: none;
+}
+
+.footer-col-6 {
+   padding-right: 130px;
+}
+
+.buttons-under-contact a {
+   text-decoration: none;
+   color: black;
+   list-style-type: none;
+}
+
+.col-3 p {
+   color: grey;
+   line-height: 28px;
+}
+
+.col-3 h6 {
+   margin: 15px 0px 15px 0px;
+}
+
+.street,
+.phonenumber-footer {
+   padding: 10px 10px 10px 20px;
+   margin-top: 20px;
+   background-color: rgb(233, 236, 247);
+   border-radius: 20px;
+   transition: 0.25s;
+}
+
+.street:hover,
+.phonenumber-footer:hover {
+   background-color: rgb(26, 21, 220);
+   color: white;
+}

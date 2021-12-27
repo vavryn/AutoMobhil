@@ -1,14 +1,11 @@
-img {
-   float: right;
-   margin: 0;
-   width: 500px;
+.img
+{
+   width: 400px;
+   height: 400px;
 }
 
-* {
-   margin: 0;
-   padding: 0;
-}
-
-.leftcol {
-   position: absolute;
+input
+{
+   background-color: black;
+   cursor: pointer;
 }

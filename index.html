@@ -176,16 +176,16 @@
          <div class="col-6">
             <div class="rightcol-section-1">
                <div class="press-holder">
-                  <img class="image-with-radius-1" src="img/RedPorsche.png">
+                  <img class="image-with-radius-1" src="img/RedPorsche.png" id="myImg">
                   <div class="text-on-picture">
                      <div class="onpicture">
                         <div class="top-left">
                            <h2>Sport Car</h2> <br>
-                           <h3> Porsche 123 GT</h3>
+                           <h3 id = "MyName"> Porsche 123 GT</h3>
                         </div>
                         <div class="top-right">
                            <h4> Starting at </h4><br>
-                           <h3>25 000$</h3>
+                           <h3 id="MyPrice"> 25 000$ </h3>
                         </div>
 
                         <div class="bottom-left">
@@ -193,8 +193,15 @@
                         </div>
 
                         <div class="bottom-right" style="display: flex;">
-                           <a href=""> <img src="img/arrow for slider.png" alt="" style="margin-right: 30px;"></a>
-                           <a href=""> <img src="img/arrow right for slider.png" alt="" style="margin-left: 30px;"></a>
+
+                           <a>
+                              <img onclick="changeImg()" value="Change" src="img/arrow for slider.png" alt="left arrow"
+                                 style="margin-right: 30px;">
+                           </a>
+                           <a>
+                              <img onclick="changeImg()" value="Change" src="img/arrow right for slider.png"
+                                 alt="right arrow" style="margin-left: 30px;">
+                           </a>
                         </div>
                      </div>
 
@@ -476,7 +483,7 @@
                      <button class="nmt-arrow-right"></button>
                      <div class="nmt-circle">
                      </div>
-                     <a href="" style="color: gray; padding-left: 20px;"> Learn More</a>
+                     <a class="learnmore" href=""> Learn More</a>
                   </div>
 
                </div>

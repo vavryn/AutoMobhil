@@ -100,3 +100,20 @@ closeButton.addEventListener('click', (e) => {
       animation.cancel();
    };
 });
+
+function changeImg() {
+   var image = document.getElementById('myImg');
+   var price = document.getElementById('MyPrice');
+   var name = document.getElementById('MyName');
+
+   if (image.src.match("img/RedPorsche.png")) {
+      image.src = "img/GreyPorshe.png";
+      price.innerHTML = '35 000$';
+      name.innerHTML = "Porsche 1999 GT"
+   }
+   else {
+      image.src = "img/RedPorsche.png";
+      price.innerHTML = '25 000$';
+      name.innerHTML = "Porsche 123 GT"
+   }
+}

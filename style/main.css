@@ -225,7 +225,7 @@ input:checked + .slider-switch > .switch-oui {
    width: 18rem;
 }
 
-.d-flex
+.cards
 {
    padding-left: 20%;
 }
@@ -466,5 +466,19 @@ footer {
 }
 
 /* media */
-@media (min-width: 575.98px){
+@media (max-width: 1200px){
+   .cards
+   {
+      padding-left: 0px;
+   }
+
+   .rightcol-section-2
+   {
+      padding-left: 0;
+   }
+
+   .up-text
+   {
+      width: 55%;
+   }
 }

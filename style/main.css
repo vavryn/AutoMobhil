@@ -35,6 +35,7 @@
    top: 8px;
    left: 16px;
    padding: 50px;
+   text-align: left;
 }
 
 .top-right {
@@ -63,8 +64,7 @@ form {
    margin-left: 10px;
 }
 
-a
-{
+a {
    cursor: pointer;
 }
 
@@ -76,25 +76,28 @@ a
 
 .leftcol-section-1 {
    padding: 50px 15px 0px 100px;
-   /* position: absolute; */
 }
 
 .leftcol-section-2 {
-   background-color: black;
+   
+   position: absolute;
+   width: 43%;
+}
+
+.leftcol-section-2 img{
    border-radius: 0px 80px 80px 0px;
-   width: 100%;
+}
+
+.rightcol-section-2 {
+   position: relative;
+   padding-left: 10%;
+   margin-bottom: 200px;
 }
 
 .image-with-radius-1 {
    border-radius: 0px 0px 15px 100px;
    opacity: 0.7;
    width: 100%;
-}
-
-.image-with-radius-2 {
-   width: 100%;
-   border-radius: 0px 80px 80px 0px;
-   opacity: 0.7;
 }
 
 .press-holder {
@@ -218,6 +221,13 @@ input:checked + .slider-switch > .switch-oui {
 
 .container-card {
    padding: 10px;
+   margin-left: 30px;
+   width: 18rem;
+}
+
+.d-flex
+{
+   padding-left: 20%;
 }
 
 .vertical-list li {
@@ -249,11 +259,13 @@ section {
 
 .card-body {
    padding: 40px;
+   border-radius: 15px;
 }
 
 .up-text {
-   padding: 60px;
-   width: 80%;
+   padding: 0;
+   width: 40%;
+   margin-left:30%;
 }
 
 .up-text h1 {
@@ -368,7 +380,7 @@ section {
    padding-left: 20px;
 }
 
-.learnmore:hover{
+.learnmore:hover {
    color: blue;
    padding-left: 20px;
 }
@@ -451,4 +463,8 @@ footer {
 .phonenumber-footer:hover {
    background-color: rgb(26, 21, 220);
    color: white;
+}
+
+/* media */
+@media (min-width: 575.98px){
 }

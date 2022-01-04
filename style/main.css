@@ -1,3 +1,8 @@
+nav {
+   text-transform: uppercase;
+   font-size: 13px;
+}
+
 .logo-mobhil {
    height: 100px;
    width: 210px;
@@ -60,6 +65,14 @@
    width: 150px;
 }
 
+.rightarrow {
+   margin-left: 30px;
+}
+
+.leftarrow {
+   margin-right: 30px;
+}
+
 form {
    margin-left: 10px;
 }
@@ -79,12 +92,11 @@ a {
 }
 
 .leftcol-section-2 {
-   
    position: absolute;
    width: 43%;
 }
 
-.leftcol-section-2 img{
+.leftcol-section-2 img {
    border-radius: 0px 80px 80px 0px;
 }
 
@@ -107,7 +119,6 @@ a {
 .say-hello {
    font-size: 70px;
    font-weight: 800;
-   line-height: 50px color #222;
    margin-bottom: 20px;
 }
 
@@ -127,7 +138,7 @@ dd {
 .switch {
    position: relative;
    display: inline-block;
-   width: 320px;
+   width: 280px;
    height: 50px;
 }
 
@@ -152,7 +163,7 @@ dd {
    position: absolute;
    content: "";
    height: 40px;
-   width: 122px;
+   width: 103px;
    left: 7px;
    bottom: 5px;
    background-color: orange;
@@ -170,8 +181,8 @@ input:focus + .slider-switch {
 }
 
 input:checked + .slider-switch:before {
-   transform: translateX(132px);
-   width: 172px;
+   transform: translateX(112px);
+   width: 155px;
    background-color: #5283ff;
 }
 
@@ -190,15 +201,15 @@ input:checked + .slider-switch:before {
 .switch-non {
    position: absolute;
    top: 50%;
-   transform: translate(60%, -50%);
+   transform: translate(40%, -50%);
    color: white;
 }
 
 .switch-oui {
    position: absolute;
    top: 50%;
-   transform: translate(-10%, -50%);
-   right: 15px;
+   transform: translate(-5%, -50%);
+   right: 5px;
    color: #6666;
 }
 
@@ -216,7 +227,11 @@ input:checked + .slider-switch > .switch-oui {
 
 .blue-button-near-mini-selector {
    margin-left: 0px;
-   padding: 11px 10px 0px 30px;
+   padding: 10px 30px 0px 30px;
+   /* width: 33%;
+   height: 60%; */
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .container-card {
@@ -225,9 +240,9 @@ input:checked + .slider-switch > .switch-oui {
    width: 18rem;
 }
 
-.cards
-{
+.cards {
    padding-left: 20%;
+   display: flex;
 }
 
 .vertical-list li {
@@ -238,6 +253,8 @@ input:checked + .slider-switch > .switch-oui {
    font-size: 24px;
 }
 
+/* width: 30%; */
+
 section {
    padding-bottom: 100px;
 }
@@ -245,7 +262,7 @@ section {
 .under-dt {
    padding: 15px 0px 15px 0px;
    width: 650px;
-   /* position: absolute; */
+   display: flex;
 }
 
 .elements-of-card {
@@ -265,7 +282,7 @@ section {
 .up-text {
    padding: 0;
    width: 40%;
-   margin-left:30%;
+   margin-left: 30%;
 }
 
 .up-text h1 {
@@ -277,10 +294,6 @@ section {
    font-weight: bold;
    font-size: 50px;
    padding: 20px 0px 20px 0px;
-}
-
-.blue-button-near-mini-selector {
-   padding: 10px 30px 0px 30px;
 }
 
 .textabout h6 {
@@ -318,8 +331,18 @@ section {
    text-align: center;
 }
 
+.header-section-3 h2 {
+   font-weight: bold;
+   padding-bottom: 20px;
+   font-size: 50px;
+}
+
 .header-section-3 p {
    font-size: 15px;
+}
+
+p{
+   margin-bottom: 0;
 }
 
 .textabout {
@@ -385,7 +408,11 @@ section {
    padding-left: 20px;
 }
 
-/*  */
+/* Section-4  */
+
+.section-4-buttons {
+   display: flex;
+}
 
 .section-4 img {
    height: 650px;
@@ -399,6 +426,7 @@ section {
    color: white;
    font-size: 60px;
    margin: 60px;
+   width: 50%;
 }
 
 .section-4 button {
@@ -406,9 +434,10 @@ section {
    padding: 10px 30px 10px 30px;
 }
 
-.background {
+.section-4-background {
    border-radius: 100px;
    padding: 30px;
+   margin-top: 100px;
 }
 
 footer li {
@@ -466,46 +495,189 @@ footer {
 }
 
 /* media */
-@media (max-width: 1200px){
-   .cards
-   {
+@media (max-width: 1200px) {
+   .cards {
       padding-left: 0px;
+      /* display: unset; */
    }
 
-   .rightcol-section-2
-   {
+   .rightcol-section-2 {
       padding-left: 0;
    }
 
-   .up-text
-   {
+   .up-text {
       width: 55%;
       margin-left: 38%;
    }
 }
 
-
-
-
 @media (max-width: 992px) {
-   .col-6
-   {
+   .col-6 {
       width: 100%;
    }
 
-   .image-with-radius-1
-   {
+   .rightcol-section-4 img {
+      width: 200px;
+   }
+
+   .section-4 p {
+      font-size: 50px;
+      margin: 0px 0px 50px 50px;
+   }
+
+   .section-4 button {
+      margin: 20px 0px 10px 0px;
+   }
+
+   .section-4-buttons {
+      display: inline-grid;
+      margin-left: 50px;
+   }
+
+   .image-with-radius-1 {
       border-radius: 0px 0px 100px 100px;
    }
 
-   .rightcol-section-1
-   {
+   .rightcol-section-1 {
       border-radius: 0px 0px 100px 100px;
    }
 
-   footer
-   {
-    /* font-size: 8px; */
+   footer {
+      /* font-size: 8px; */
+   }
+}
+
+@media (max-width: 720px) {
+   /* section-2 */
+   .cards {
+      display: table;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
    }
 
+   .leftcol-section-2 {
+      display: none;
+   }
+
+   /* section-1 */
+   .up-text h1,
+   h6,
+   p {
+      text-align: center;
+   }
+
+   .up-text {
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+   }
+
+   .under-dt {
+      display: inline-grid;
+      width: 100%;
+      text-align: center;
+   }
+   .leftcol-section-1 {
+      margin-top: 20px;
+      padding: 5px;
+   }
+
+   .leftcol-section-1 h1 {
+      font-size: 35px;
+   }
+
+   .textabout h6 {
+      text-align: start;
+   }
+
+   .textabout
+   {
+      margin-bottom: 25px;
+   }
+
+   .dont-wories {
+      font-size: 35px;
+   }
+
+   .header-section-3 h2 {
+      font-size: 35px;
+   }
+
+   /* section-3 */
+   .leftcol-section-3 {
+   padding: 10px;
+}
+}
+
+@media (max-width: 576px) {
+   /* section-4 */
+   .section-4 p {
+      width: 100%;
+      font-size: 30px;
+      margin: 0px 0px 0px 0px;
+      text-align: center;
+      padding: 10px;
+   }
+   .section-4 img {
+      display: none;
+   }
+
+   .section-4-buttons {
+      display: block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   /* adaptive section-1 */
+
+   .top-left {
+      padding: 10px;
+   }
+
+   .top-right {
+      padding: 10px;
+   }
+
+   .bottom-left {
+      padding: 20px;
+   }
+
+   .bottom-right {
+      padding: 10px;
+   }
+
+   .rightcol-section-1 {
+      border-radius: 0px 0px 20px 20px;
+   }
+
+   .rightcol-section-1 img {
+      border-radius: 0px 0px 20px 20px;
+   }
+}
+
+@media (max-width: 375px) {
+   /* adaptive section-1 */
+
+   .leftcol-section-1 {
+      padding: 20px;
+   }
+
+   .bottom-right {
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+   }
+
+   .rightarrow {
+      margin-left: 10px;
+   }
+
+   .leftarrow {
+      margin-right: 10px;
+   }
+
+   .leftcol-section-1 h1 {
+      font-size: 35px;
+   }
 }

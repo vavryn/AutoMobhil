@@ -28,7 +28,24 @@ nav {
 }
 
 .onpicture {
+   font-family: "Roboto", sans-serif;
    color: white;
+}
+
+.onpicture h3 {
+   font-weight: 100;
+   font-size: 40px;
+}
+
+.onpicture h4 {
+   font-weight: 100;
+   font-size: 20px;
+}
+
+.onpicture h2 {
+   font-size: 20px;
+   font-weight: 300;
+   text-transform: uppercase;
 }
 
 .PorscheGT-right {
@@ -253,6 +270,7 @@ input:checked + .slider-switch > .switch-oui {
 
 .card-wrapper {
    text-decoration: none;
+   font-family: "Roboto", san;
 }
 
 .vertical-list li {
@@ -432,6 +450,8 @@ section {
    text-align: left;
    font-size: 14px;
    color: white;
+   font-weight: 100;
+   letter-spacing: 3px;
 }
 
 p {
@@ -591,6 +611,27 @@ footer {
 
 /* media */
 @media (max-width: 1200px) {
+   .onpicture h5 {
+      font-weight: 100;
+      font-size: 20px;
+   }
+
+   .onpicture h3 {
+      font-weight: 100;
+      font-size: 30px;
+   }
+
+   .onpicture h4 {
+      font-weight: 100;
+      font-size: 20px;
+   }
+
+   .onpicture h2 {
+      font-size: 20px;
+      font-weight: 300;
+      text-transform: uppercase;
+   }
+
    .cards {
       padding-left: 0px;
       /* display: unset; */
@@ -673,8 +714,8 @@ footer {
    }
 
    /* section-1 */
-   .box
-   {
+
+   .box {
       text-align: center;
    }
    .up-text h1 h6 p {
@@ -686,6 +727,11 @@ footer {
       margin: 0;
       padding: 10px;
       text-align: center;
+   }
+
+   #myPrice {
+      font-weight: 700;
+
    }
 
    .under-dt {
@@ -725,8 +771,28 @@ footer {
 }
 
 @media (max-width: 576px) {
-   /* sectiom-slider */
+   /* section-1 */
 
+   .onpicture h5 {
+      font-weight: 100;
+      font-size: 15px;
+   }
+
+   .onpicture h3 {
+      font-weight: 100;
+      font-size: 20px;
+   }
+
+   .onpicture h4 {
+      font-weight: 100;
+      font-size: 15px;
+   }
+
+   .onpicture h2 {
+      font-size: 15px;
+      font-weight: 300;
+      text-transform: uppercase;
+   }
    /* section-4 */
    .section-4 p {
       width: 100%;

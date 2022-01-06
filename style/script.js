@@ -103,16 +103,16 @@ closeButton.addEventListener('click', (e) => {
 
 function changeImg() {
    var image = document.getElementById('myImg');
-   var price = document.getElementById('MyPrice');
-   var name = document.getElementById('MyName');
+   var price = document.getElementById('myPrice');
+   var name = document.getElementById('myName');
 
-   if (image.src.match("img/RedPorsche.png")) {
+   if (image.src.match("img/RedPorsch.png")) {
       image.src = "img/GreyPorshe.png";
       price.innerHTML = '35 000$';
       name.innerHTML = "Porsche 1999 GT"
    }
    else {
-      image.src = "img/RedPorsche.png";
+      image.src = "img/RedPorsch.png";
       price.innerHTML = '25 000$';
       name.innerHTML = "Porsche 123 GT"
    }

@@ -1,6 +1,15 @@
+.row > * {
+   padding-right: 0;
+}
+
 nav {
    text-transform: uppercase;
    font-size: 13px;
+   display: fixed;
+}
+
+.near-nav {
+   display: inline-flex;
 }
 
 .logo-mobhil {
@@ -173,7 +182,7 @@ dd {
 }
 
 input:checked + .slider-switch {
-   background-color: #e8e8e8;
+   background-color: rgb(214, 214, 214);
 }
 
 input:focus + .slider-switch {
@@ -226,10 +235,7 @@ input:checked + .slider-switch > .switch-oui {
 }
 
 .blue-button-near-mini-selector {
-   margin-left: 0px;
-   padding: 10px 30px 0px 30px;
-   /* width: 33%;
-   height: 60%; */
+   padding: 10px 30px 10px 30px;
    margin-left: auto;
    margin-right: auto;
 }
@@ -243,6 +249,10 @@ input:checked + .slider-switch > .switch-oui {
 .cards {
    padding-left: 20%;
    display: flex;
+}
+
+.card-wrapper {
+   text-decoration: none;
 }
 
 .vertical-list li {
@@ -264,6 +274,59 @@ section {
    width: 650px;
    display: flex;
 }
+
+/* select box */
+
+.verticalLine {
+   border-left: 1px solid grey;
+   opacity: 0.5;
+}
+
+.box {
+   /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+   margin: 0px 20px 0px 20px;
+}
+
+.box select {
+   color: grey;
+   font-weight: 400;
+   padding: 12px;
+   border: none;
+   font-size: 15px;
+   -webkit-appearance: button;
+   appearance: button;
+   outline: none;
+   text-transform: uppercase;
+   font-family: "Roboto", sans-serif;
+}
+
+.box::before {
+   font-family: FontAwesome;
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 20%;
+   height: 100%;
+   text-align: center;
+   font-size: 28px;
+   line-height: 45px;
+   color: rgba(255, 255, 255, 0.5);
+   background-color: rgba(255, 255, 255, 0.1);
+   pointer-events: none;
+}
+
+.box:hover::before {
+   color: rgba(255, 255, 255, 0.6);
+   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+   padding: 30px;
+}
+/* end select box */
 
 .elements-of-card {
    padding: 20px 0px 20px 0px;
@@ -290,6 +353,17 @@ section {
    font-weight: bold;
 }
 
+.tryadvance {
+   font-weight: bold;
+   text-decoration: none;
+   font-size: 20px;
+}
+
+.tryadvance pre:hover {
+   color: black;
+   transition: 0.6s;
+}
+
 .dont-wories {
    font-weight: bold;
    font-size: 50px;
@@ -303,6 +377,15 @@ section {
 
 .leftcol-section-3 {
    padding: 40px;
+}
+
+#autopicture::before {
+   transition: 0.5s;
+}
+
+#autopicture:hover {
+   transform: scale(1.1);
+   transition: 0.5s;
 }
 
 /* овалы под картинкой. конечно, можно создать переменные и все это дело автоматизировать, но мне так лень */
@@ -341,7 +424,17 @@ section {
    font-size: 15px;
 }
 
-p{
+.card-category {
+   text-transform: uppercase;
+   position: absolute;
+   top: 20px;
+   left: 26px;
+   text-align: left;
+   font-size: 14px;
+   color: white;
+}
+
+p {
    margin-bottom: 0;
 }
 
@@ -421,6 +514,7 @@ p{
    left: 60%;
    object-fit: none;
    border-radius: 20px;
+   bottom: 35px;
 }
 .section-4 p {
    color: white;
@@ -461,7 +555,8 @@ footer {
 }
 
 .footer-col-6 {
-   padding-right: 130px;
+   padding-right: 60px;
+   margin-bottom: 40px;
 }
 
 .buttons-under-contact a {
@@ -512,6 +607,27 @@ footer {
 }
 
 @media (max-width: 992px) {
+   .navbar-collapse {
+      position: absolute;
+      left: 0px;
+      width: 100%;
+      background-color: white;
+      top: 105px;
+      z-index: 1;
+      text-align: center;
+   }
+
+   .near-nav {
+      margin-bottom: 20px;
+   }
+
+   .navcontact {
+      margin-bottom: 20px;
+   }
+
+   .col-slider {
+      margin: 0px 5px 0px 5px;
+   }
    .col-6 {
       width: 100%;
    }
@@ -541,10 +657,6 @@ footer {
    .rightcol-section-1 {
       border-radius: 0px 0px 100px 100px;
    }
-
-   footer {
-      /* font-size: 8px; */
-   }
 }
 
 @media (max-width: 720px) {
@@ -561,9 +673,11 @@ footer {
    }
 
    /* section-1 */
-   .up-text h1,
-   h6,
-   p {
+   .box
+   {
+      text-align: center;
+   }
+   .up-text h1 h6 p {
       text-align: center;
    }
 
@@ -571,6 +685,7 @@ footer {
       width: 100%;
       margin: 0;
       padding: 10px;
+      text-align: center;
    }
 
    .under-dt {
@@ -580,7 +695,7 @@ footer {
    }
    .leftcol-section-1 {
       margin-top: 20px;
-      padding: 5px;
+      padding: 30px;
    }
 
    .leftcol-section-1 h1 {
@@ -591,8 +706,7 @@ footer {
       text-align: start;
    }
 
-   .textabout
-   {
+   .textabout {
       margin-bottom: 25px;
    }
 
@@ -606,11 +720,13 @@ footer {
 
    /* section-3 */
    .leftcol-section-3 {
-   padding: 10px;
-}
+      padding: 10px;
+   }
 }
 
 @media (max-width: 576px) {
+   /* sectiom-slider */
+
    /* section-4 */
    .section-4 p {
       width: 100%;
@@ -653,6 +769,25 @@ footer {
 
    .rightcol-section-1 img {
       border-radius: 0px 0px 20px 20px;
+   }
+
+   /* footer */
+   .col-sm-6 {
+      margin-bottom: 40px;
+   }
+
+   .col-sm-2 {
+      margin-bottom: 30px;
+      text-align: center;
+   }
+
+   .footer-col-6 {
+      padding-right: 0px;
+   }
+
+   .img-footer {
+      margin-left: 15%;
+      margin-right: 15%;
    }
 }
 

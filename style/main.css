@@ -2,6 +2,10 @@
    padding-right: 0;
 }
 
+.row {
+   --bs-gutter-x: 0rem;
+}
+
 nav {
    text-transform: uppercase;
    font-size: 13px;
@@ -28,7 +32,24 @@ nav {
 }
 
 .onpicture {
+   font-family: "Roboto", sans-serif;
    color: white;
+}
+
+.onpicture h3 {
+   font-weight: 100;
+   font-size: 40px;
+}
+
+.onpicture h4 {
+   font-weight: 100;
+   font-size: 20px;
+}
+
+.onpicture h2 {
+   font-size: 20px;
+   font-weight: 300;
+   text-transform: uppercase;
 }
 
 .PorscheGT-right {
@@ -59,11 +80,23 @@ nav {
    padding: 50px;
 }
 
+.about-section-1-centered {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
 .bottom-left {
    position: absolute;
    bottom: 8px;
    left: 16px;
    padding: 50px;
+}
+
+.bottom-left h5:hover {
+   font-weight: 300;
+   border-bottom: 1px solid white;
 }
 
 .bottom-right {
@@ -76,10 +109,22 @@ nav {
 
 .rightarrow {
    margin-left: 30px;
+   opacity: 0.5;
+}
+
+.rightarrow:hover {
+   transition: 0.3s;
+   opacity: 1;
 }
 
 .leftarrow {
    margin-right: 30px;
+   opacity: 0.5;
+}
+
+.leftarrow:hover {
+   transition: 0.3s;
+   opacity: 1;
 }
 
 form {
@@ -94,6 +139,15 @@ a {
    background-color: black;
    border-radius: 0px 0px 0px 100px;
    text-align: right;
+}
+
+#myPrice {
+   font-weight: 700;
+}
+
+h5 {
+   font-family: "Roboto", sans-serif;
+   font-weight: 100;
 }
 
 .leftcol-section-1 {
@@ -242,7 +296,7 @@ input:checked + .slider-switch > .switch-oui {
 
 .container-card {
    padding: 10px;
-   margin-left: 30px;
+   margin-left: 20px;
    width: 18rem;
 }
 
@@ -253,6 +307,7 @@ input:checked + .slider-switch > .switch-oui {
 
 .card-wrapper {
    text-decoration: none;
+   font-family: "Roboto", san;
 }
 
 .vertical-list li {
@@ -335,6 +390,8 @@ section {
 
 .card-title {
    padding: 20px 0px 20px 0px;
+   font-weight: bold;
+   text-transform: uppercase;
 }
 
 .card-body {
@@ -432,10 +489,14 @@ section {
    text-align: left;
    font-size: 14px;
    color: white;
+   font-weight: 100;
+   letter-spacing: 3px;
 }
 
 p {
    margin-bottom: 0;
+   font-family: "Roboto", sans;
+   font-weight: 100;
 }
 
 .textabout {
@@ -591,6 +652,27 @@ footer {
 
 /* media */
 @media (max-width: 1200px) {
+   .onpicture h5 {
+      font-weight: 100;
+      font-size: 20px;
+   }
+
+   .onpicture h3 {
+      font-weight: 100;
+      font-size: 30px;
+   }
+
+   .onpicture h4 {
+      font-weight: 100;
+      font-size: 20px;
+   }
+
+   .onpicture h2 {
+      font-size: 20px;
+      font-weight: 300;
+      text-transform: uppercase;
+   }
+
    .cards {
       padding-left: 0px;
       /* display: unset; */
@@ -607,8 +689,16 @@ footer {
 }
 
 @media (max-width: 992px) {
+   .navbar {
+      margin-bottom: 20px;
+      padding-top: 0;
+      padding-bottom: 0;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      background-color: white;
+   }
    .navbar-collapse {
-      position: absolute;
       left: 0px;
       width: 100%;
       background-color: white;
@@ -657,6 +747,10 @@ footer {
    .rightcol-section-1 {
       border-radius: 0px 0px 100px 100px;
    }
+
+   #OurTeam {
+      padding-bottom: 20px;
+   }
 }
 
 @media (max-width: 720px) {
@@ -673,8 +767,8 @@ footer {
    }
 
    /* section-1 */
-   .box
-   {
+
+   .box {
       text-align: center;
    }
    .up-text h1 h6 p {
@@ -722,10 +816,48 @@ footer {
    .leftcol-section-3 {
       padding: 10px;
    }
+   .rightcol-section-2 {
+      margin-bottom: 0px;
+   }
+
+   /* slider */
+   .section-slider {
+      width: 100%;
+   }
+
+   .card__duration {
+      width: 100%;
+   }
 }
 
 @media (max-width: 576px) {
-   /* sectiom-slider */
+   /* section-1 */
+
+   .onpicture h5 {
+      font-weight: 100;
+      font-size: 15px;
+   }
+
+   .onpicture h3 {
+      font-weight: 100;
+      font-size: 20px;
+   }
+
+   .onpicture h4 {
+      font-weight: 100;
+      font-size: 15px;
+   }
+
+   .onpicture h2 {
+      font-size: 15px;
+      font-weight: 300;
+      text-transform: uppercase;
+   }
+
+   /* section-2 */
+   .container-card {
+      margin-left: auto;
+   }
 
    /* section-4 */
    .section-4 p {
@@ -748,11 +880,13 @@ footer {
    /* adaptive section-1 */
 
    .top-left {
-      padding: 10px;
+      padding-left: 10px;
+      padding-top: 60px;
    }
 
    .top-right {
-      padding: 10px;
+      padding-right: 10px;
+      padding-top: 60px;
    }
 
    .bottom-left {
@@ -780,6 +914,9 @@ footer {
       margin-bottom: 30px;
       text-align: center;
    }
+   .col-lg-2 h6 {
+      text-align: center;
+   }
 
    .footer-col-6 {
       padding-right: 0px;
@@ -788,6 +925,19 @@ footer {
    .img-footer {
       margin-left: 15%;
       margin-right: 15%;
+   }
+
+   /* About */
+   .about-section-1-centered {
+      padding-top: 80px;
+   }
+
+   .col-3-section-4 img {
+      width: 50%;
+   }
+
+   .col-6-section-2 {
+      padding-right: 0px;
    }
 }
 
@@ -815,4 +965,46 @@ footer {
    .leftcol-section-1 h1 {
       font-size: 35px;
    }
+
+   /* section */
+}
+
+/* Site.About */
+
+.row-under-timeline img {
+   height: 50px;
+}
+
+.Card-About {
+   padding: 25px;
+}
+
+.col-3-section-4 img {
+   border-radius: 30px;
+   width: 100%;
+   height: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   border: 1rem solid white;
+   object-fit: cover;
+}
+
+.col-3-section-4 h6 {
+   font-weight: 700;
+   font-size: 30px;
+   width: 100%;
+   text-align: center;
+}
+
+.col-6-section-2 {
+   padding-top: 30px;
+   padding-right: 100px;
+}
+
+/* Car Collection */
+
+.card
+{
+   width: 95%;
+   margin-top: 25px;
 }

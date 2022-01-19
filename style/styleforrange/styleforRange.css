@@ -141,19 +141,50 @@ html {
    box-sizing: inherit;
 }
 
-@media (max-width:400px) {
+@media (max-width: 400px) {
    .col-4 p {
       font-size: 10px;
    }
 }
 
-.btn-outline-primary
-{
-   border-color: #becfff;
+@media screen and (min-width: 994px) and (max-width: 1200px) {
+   .col-4 p {
+      font-size: 11px;
+   }
 }
 
-.btn
-{
+.btn-outline-primary {
+   border-color: #becfff;
+   color: rgb(74, 101, 228);
+}
+
+.btn-select {
    margin: 3px;
    padding: 6px 25px;
+}
+
+.btn-outline-primary:hover {
+   border-color: rgb(74, 101, 228);
+   color: rgb(74, 101, 228);
+   background-color: white;
+}
+
+.btn-outline-primary.active {
+   color: rgb(74, 101, 228);
+   background-color: rgb(244, 245, 249);
+   border-color: rgb(243, 244, 249);
+}
+
+.select-buttons button {
+   text-transform: uppercase;
+}
+
+.card:hover {
+   transform: scale(1.1);
+   transition: 0.5s;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
 }

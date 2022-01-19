@@ -1008,3 +1008,56 @@ footer {
    width: 95%;
    margin-top: 25px;
 }
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid rgb(235,235,235);
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  background-color: rgb(235,235,235);
+}
+
+.searchTerm:focus{
+  color: black;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid rgb(235,235,235);
+  background: rgb(235,235,235);
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap, .form-select{
+   margin-bottom: 15px;
+  width: 70%;
+}
+
+.form-select
+{
+   border-radius: 5px;
+   background-color: rgb(235, 235, 235);
+   border-color: rgb(235, 235, 235);
+   color: grey;
+}
+
+.form-select:focus
+{
+   color: black;
+}
+

@@ -1,43 +1,42 @@
-.box {
+.range {
    width: 100%;
    max-width: 312px;
-   padding: 36px 32px 48px 32px;
+   padding: 20px 0 48px 0;
    background: #fff;
    border-radius: 9px;
 }
-.box h3 {
+.range h3 {
    font-family: inherit;
    font-size: 32px;
    font-weight: 700;
-   margin: 0 0 20px 0;
    color: var(--headline);
 }
-.box h3 span {
+.range h3 span {
    font-weight: 500;
 }
-.box .values div,
-.box small div {
+.range .values div,
+.range small div {
    display: inline-block;
    vertical-align: top;
 }
-.box .values {
+.range .values {
    margin: 0;
    font-weight: 500;
    color: var(--primary);
 }
-.box .values > div:first-child {
+.range .values > div:first-child {
    margin-right: 2px;
 }
-.box .values > div:last-child {
+.range .values > div:last-child {
    margin-left: 2px;
 }
-.box small {
+.range small {
    color: var(--text);
    display: block;
    margin-top: 8px;
    font-size: 14px;
 }
-.box .slider {
+.range .slider {
    margin-top: 40px;
 }
 
@@ -80,6 +79,7 @@
    transform: translateY(calc(var(--y) * 1px));
    border: var(--handle-border);
    background: var(--background);
+   background-color: #275efe;
 }
 .slider .ui-slider-handle:hover {
    --background: var(--handle-hover);
@@ -126,7 +126,7 @@
 }
 
 html {
-   -webkit-box-sizing: border-box;
+   -webkit-range-sizing: border-box;
    box-sizing: border-box;
    -webkit-font-smoothing: antialiased;
 }
@@ -139,4 +139,21 @@ html {
 *:after {
    -webkit-box-sizing: inherit;
    box-sizing: inherit;
+}
+
+@media (max-width:400px) {
+   .col-4 p {
+      font-size: 10px;
+   }
+}
+
+.btn-outline-primary
+{
+   border-color: #becfff;
+}
+
+.btn
+{
+   margin: 3px;
+   padding: 6px 25px;
 }

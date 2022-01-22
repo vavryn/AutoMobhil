@@ -635,7 +635,7 @@ footer {
    margin: 15px 0px 15px 0px;
 }
 
-.street,
+.street-footer,
 .phonenumber-footer {
    padding: 10px 10px 10px 20px;
    margin-top: 20px;
@@ -645,9 +645,26 @@ footer {
 }
 
 .street:hover,
-.phonenumber-footer:hover {
+.phonenumber-footer:hover,
+.phonenumber:hover,
+.street:hover {
    background-color: rgb(26, 21, 220);
    color: white;
+}
+
+.phonenumber,
+.street {
+   padding: 20px;
+   margin-top: 20px;
+   background-color: rgb(233, 236, 247);
+   border-radius: 20px;
+   transition: 0.25s;
+   color: black;
+}
+
+.phonenumber,
+.street a {
+   text-decoration: none;
 }
 
 /* media */
@@ -1003,61 +1020,136 @@ footer {
 
 /* Car Collection */
 
-.card
-{
+.card {
    width: 95%;
    margin-top: 25px;
 }
 
 .search {
-  width: 100%;
-  position: relative;
-  display: flex;
+   width: 100%;
+   position: relative;
+   display: flex;
 }
 
 .searchTerm {
-  width: 100%;
-  border: 3px solid rgb(235,235,235);
-  border-right: none;
-  padding: 5px;
-  height: 36px;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  background-color: rgb(235,235,235);
+   width: 95%;
+   border: 3px solid rgb(235, 235, 235);
+   border-right: none;
+   padding: 5px;
+   height: 36px;
+   border-radius: 5px 0 0 5px;
+   outline: none;
+   background-color: rgb(235, 235, 235);
 }
 
-.searchTerm:focus{
-  color: black;
+.searchTerm:focus {
+   color: black;
 }
 
 .searchButton {
-  width: 40px;
-  height: 36px;
-  border: 1px solid rgb(235,235,235);
-  background: rgb(235,235,235);
-  text-align: center;
-  color: #fff;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  font-size: 20px;
+   width: 40px;
+   height: 36px;
+   border: 1px solid rgb(235, 235, 235);
+   background: rgb(235, 235, 235);
+   text-align: center;
+   color: #fff;
+   border-radius: 0 5px 5px 0;
+   cursor: pointer;
+   font-size: 20px;
 }
 
 /*Resize the wrap to see the search bar change!*/
-.wrap, .form-select{
+.wrap,
+.form-select {
    margin-bottom: 15px;
-  width: 70%;
+   width: 70%;
 }
 
-.form-select
-{
+.form-select {
    border-radius: 5px;
    background-color: rgb(235, 235, 235);
    border-color: rgb(235, 235, 235);
    color: grey;
 }
 
-.form-select:focus
-{
+.form-select:focus {
    color: black;
 }
 
+/* Location */
+
+.header-card {
+   padding-bottom: 20px;
+}
+
+.blue-card {
+   background-color: blue;
+   color: white;
+   padding: 40px;
+   margin: 0px 30px 0px 30px;
+}
+
+#downcard {
+   margin-top: 100px;
+}
+
+@media (max-width: 720px) {
+   #downcard {
+      margin-top: 10px;
+   }
+
+   .blue-card {
+      margin: 20px;
+   }
+}
+
+/* Contact */
+
+.header-contact img {
+   height: 150px;
+   border-radius: 20px;
+}
+
+.undercontact-footer-section {
+   margin: 5px;
+   margin-bottom: 50px;
+}
+
+.contact-rightside {
+   display: flex;
+}
+
+.but {
+   display: flex;
+}
+
+.contactform {
+   padding: 80px;
+}
+
+@media (max-width: 1200px) {
+   .contact-rightside {
+      display: contents;
+   }
+
+   .searchTerm
+   {
+      margin-bottom: 20px;
+   }
+
+}
+
+@media (max-width: 505px) {
+   .but {
+      display: contents;
+   }
+
+   .header-contact img {
+      height: 100px;
+      border-radius: 20px;
+   }
+
+   .contactform {
+      padding: 40px;
+   }
+}

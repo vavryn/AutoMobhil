@@ -117,7 +117,3 @@ function changeImg() {
       name.innerHTML = "Porsche 123 GT"
    }
 }
-
-
-// Staff. Price Range
-

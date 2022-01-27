@@ -117,3 +117,27 @@ function changeImg() {
       name.innerHTML = "Porsche 123 GT"
    }
 }
+
+function ChangeTextDescription() {
+   var TextDescription = document.getElementById('p');
+   var HDescription = document.getElementById('h');
+
+   TextDescription.innerHTML = "Это параграф с вкладки описания";
+   HDescription.innerHTML = "Это загаловок к Дескрипции"
+}
+
+function ChangeTextDescusion() {
+   var TextDescription = document.getElementById('p');
+   var HDescription = document.getElementById('h');
+
+   TextDescription.innerHTML = "Это параграф с вкладки дискусий";
+   HDescription.innerHTML = "Это загаловок к Дискусии"
+}
+
+function ChangeTextReview() {
+   var TextDescription = document.getElementById('p');
+   var HDescription = document.getElementById('h');
+
+   TextDescription.innerHTML = "Это параграф с вкладки Обзор";
+   HDescription.innerHTML = "Это загаловок к Обзора. Хотя обзоры смотрят только на ютубе. Толк от этой вкладки?"
+}

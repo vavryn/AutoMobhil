@@ -707,6 +707,7 @@ footer {
 }
 
 @media (max-width: 992px) {
+
    .navbar {
       margin-bottom: 20px;
       padding-top: 0;
@@ -1094,12 +1095,19 @@ footer {
    margin-top: 100px;
 }
 
+@media (max-width: 768px) {
+      .blue-card {
+      margin: 30px;
+   }
+   
+}
+
 @media (max-width: 720px) {
    #downcard {
       margin-top: 10px;
    }
 
-   .blue-card {
+         .blue-card {
       margin: 20px;
    }
 }
@@ -1287,7 +1295,75 @@ label img.vignette {
    font-size: 25px;
 }
 
+.header-filter-2
+{
+   justify-content: space-between; display: flex; width: 70%; padding: 20px 0;
+}
+
+.btn-with-margin
+{
+padding: 10px 30px ;
+ margin: 5px;
+ text-transform: uppercase;
+}
+
+input:hover
+{
+   border-color: rgb(74, 101, 228);
+   color:rgb(74, 101, 228);
+   background-color: white;
+}
+
+.btn-check:checked+.btn-outline-primary
+{
+   color: rgb(74, 101, 228);
+background-color:rgb(243, 244, 249);
+border-color: rgb(243, 244, 249);
+}
+
+.btn-outline-primary:checked
+{
+   color: rgb(74, 101, 228);
+   background-color: rgb(244, 245, 249);
+}
+
+
+
+.under-filter
+{
+   width: 70%; 
+   margin: 20px 0px 40px 0px;
+}
+
 @media (max-width: 992px) {
+
+
+   .under-filter
+   {
+      width: 100%;
+   }
+
+   .wrap
+   {
+      width: 100%;
+   }
+
+   .form-select
+   {
+      width: 100%;
+   }
+
+
+   .header-filter-2
+   {
+      width: 100%;
+   }
+
+   .card
+   {
+      width: 100%;
+   }
+
    #anotherone {
       text-align: center;
       margin-bottom: 20px;
@@ -1307,5 +1383,108 @@ label img.vignette {
 .headerbuttonwithtext p
 {
 margin: 0px 10px;
-font-size: 30px;
+font-size: 3vw;
+}
+
+.headerbuttonwithtext a
+{
+   color: black;
+   text-decoration: none;
+}
+
+.headerbuttonwithtext a:hover
+{
+   font-weight: 300;
+}
+
+.headerbuttonwithtext a:active
+{
+   font-weight: 700;
+}
+
+.h-of-sector-description h6
+{
+   font-size: 20px;
+}
+
+.blue-background
+{
+   
+   background-color: blue;
+   text-align: center;
+   color: white;
+   border-radius: 20px;
+   width: 400px;
+   height: 250px;
+}
+
+.numbersrating
+{
+   height: 80%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.numbersrating strong
+{
+   padding: 3vh 0;
+   font-size: 10vh;
+   vertical-align: middle;
+}
+
+
+.bnumbersrating p
+{
+   font-size: 3vh;
+}
+
+.blockwithrat p
+{
+   font-size: 30px;
+}
+
+.selector-text
+{
+   padding: 50px;
+}
+
+@media (max-width:525px) {
+   .blue-background
+   {
+      width: 100%;
+   }
+
+   .blue-background p
+   {
+      font-size: 25px;
+   }
+
+   .Stars img
+   {
+      height: 20px;
+   }
+
+   .headerbuttonwithtext p
+   {
+   margin: 0px 10px;
+   font-size: 15px;
+   }
+
+   .selector-text
+   {
+      padding: 20px;
+   }
+
+}
+
+#p
+{
+   font-weight: 100;
+}
+
+#h
+{
+   font-weight: 500;
+   font-size: 20px;
 }
